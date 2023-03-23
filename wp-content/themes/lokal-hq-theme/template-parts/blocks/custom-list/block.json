@@ -1,0 +1,14 @@
+{
+    "name": "acf/custom-list",
+    "title": "List with Text",
+    "description": "A custom list with text block.",
+    "category": "lokalwp",
+    "icon": "admin-comments",
+    "keywords": ["block-list"],
+    "post_types": ["post", "page"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "render.php"
+    },
+    "align": "full"
+}

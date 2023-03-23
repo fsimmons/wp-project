@@ -1,0 +1,30 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-02 13:14:45
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-03 13:54:06
+ */
+// stylelint-disable number-max-precision, rem-over-px/rem-over-px
+@mixin button-size-small() {
+  font-size: var(--font-size-16);
+  line-height: 20.9091px;
+  padding-bottom: calc(10px - calc(var(--border-width-input-field) * 2));
+  padding-left: calc(33px - calc(var(--border-width-input-field) * 2));
+  padding-right: calc(33px - calc(var(--border-width-input-field) * 2));
+  padding-top: calc(10px - calc(var(--border-width-input-field) * 2));
+
+  @media (max-width: $container-mobile) {
+    padding-bottom: calc(7px - calc(var(--border-width-input-field) * 2));
+    padding-left: calc(17px - calc(var(--border-width-input-field) * 2));
+    padding-right: calc(17px - calc(var(--border-width-input-field) * 2));
+    padding-top: calc(7px - calc(var(--border-width-input-field) * 2));
+  }
+}
+
+.button-small {
+  @include button-size-small;
+
+  .nav-link {
+    padding: 4px;
+  }
+}

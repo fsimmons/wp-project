@@ -1,0 +1,49 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-03 05:04:15
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-13 18:24:58
+ */
+// Custom Blocks Generic Styles - all specific styles needs to be compiled separately in the future
+
+
+.three-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        width: calc(50% - 1rem);
+
+        @media (min-width: $container-mobile) {
+            width: calc(33% - 2rem);
+        }
+    }
+}
+
+.card-simple {
+    padding: 1.5rem;
+    padding-top: 6rem;
+    border-radius: 7px;
+    border: 1px solid var(--color-dark-gray);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+
+    h4 {
+        margin-bottom: 0;
+        font-family: var(--font-bold-text);
+        line-height: 1.2;
+        font-size: var(--font-size-h4);
+    }
+
+    @media (min-width: $container-mobile) {
+        padding: 2.5rem;
+        padding-top: 9rem;
+        min-height: 25rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+}
+

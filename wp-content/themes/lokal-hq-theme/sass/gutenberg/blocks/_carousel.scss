@@ -1,0 +1,161 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-13 10:52:03
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-23 11:03:43
+ */
+// General carousel/swiper styles
+@import 'swiper/swiper';
+
+button.swiper-actions,
+button.swiper-actions:focus,
+button.swiper-actions:hover,
+.wp-block .acf-block-preview button.swiper-actions,
+.wp-block .acf-block-preview button.swiper-actions:focus,
+.wp-block .acf-block-preview button.swiper-actions:hover {
+  background-color: transparent;
+  border: 0;
+  color: var(--color-black);
+  padding: 0;
+}
+
+// stylelint-disable
+.site-main button.swiper-actions:hover {
+  opacity: .5;
+}
+
+.swiper-controls {
+  display: flex;
+  gap: 3.7rem;
+  margin-bottom: 6.4rem;
+  transform: translateX(-13px);
+}
+
+ul.swiper-wrapper {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.swiper-slide {
+  margin: 0;
+
+  // Use 100% and slidesPerView: 'auto', if you wan't a full width slider
+  width: auto;
+}
+
+.swiper-button-disabled[disabled]:hover,
+.swiper-button-disabled[disabled]:focus,
+.swiper-button-disabled[disabled] {
+  opacity: .2;
+}
+
+// Carousel block styles
+.block-carousel {
+
+  // Show overflowing content
+  overflow: visible;
+
+  .container,
+  .swiper-container {
+    padding-top: 5rem;
+    overflow: visible;
+  }
+
+  img {
+    border-radius: 6px;
+    height: 500px;
+
+    @media (max-width: $container-desktop) {
+      height: auto;
+      max-width: calc(100vw - calc(var(--padding-container-horizontal) * 2));
+      width: 100%;
+    }
+  }
+
+  .swiper-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+  }
+}
+
+.block.block-reset-styles {
+  background-color: unset;
+  background-image: unset;
+  border: unset;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.block.is-skip-link {
+  @extend .container;
+  height: 0;
+  overflow: visible;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 3;
+
+  .skip-link {
+    transform: translateY(-10rem);
+  }
+}
+
+
+.card-slider {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  @media (min-width: $container-mobile) {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+  }
+}
+
+.card-slider-content {
+  background: var(--color-white);
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  h6 {
+      font-size: 24px;
+      text-align: right;
+      margin-bottom: 0;
+  }
+}
+
+.card-slider-image {
+  height: 35rem;
+  width: 100%;
+  background: var(--color-lime-green);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 100%; 
+      width: 100%;
+      object-fit: cover;
+  }
+}
+
+// remove code after
+
+.three-carousel-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        width: 100%;
+
+        @media (min-width: $container-mobile) {
+            width: calc(33% - 2rem);
+        }
+    }
+}

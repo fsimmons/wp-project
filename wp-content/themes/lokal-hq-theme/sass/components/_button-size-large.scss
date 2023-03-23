@@ -1,0 +1,22 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-02 13:14:45
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-03 13:55:01
+ */
+// stylelint-disable number-max-precision, rem-over-px/rem-over-px
+@mixin button-size-large() {
+  font-size: var(--font-size-18);
+  line-height: 1.66;
+  padding-bottom: calc(19px - calc(var(--border-width-input-field) * 2));
+  padding-left: calc(33px - calc(var(--border-width-input-field) * 2));
+  padding-right: calc(33px - calc(var(--border-width-input-field) * 2));
+  padding-top: calc(19px - calc(var(--border-width-input-field) * 2));
+
+  @media (max-width: $container-mobile) {
+    padding-bottom: calc(13px - calc(var(--border-width-input-field) * 2));
+    padding-left: calc(25px - calc(var(--border-width-input-field) * 2));
+    padding-right: calc(25px - calc(var(--border-width-input-field) * 2));
+    padding-top: calc(13px - calc(var(--border-width-input-field) * 2));
+  }
+}

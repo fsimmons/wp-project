@@ -1,0 +1,133 @@
+# Ignore everything but...
+# ----------------------------------
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!readme.md
+
+!/favicon.ico
+!/robots.txt
+
+# ignore node/grunt dependency directories
+node_modules/
+
+# Ignore WP Core files (keeps wp-content)
+# ----------------------------------
+
+/wp-admin
+/wp-includes
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+/sitemap.xml
+/sitemap.xml.gz
+
+# WP Config
+# ----------------------------------
+
+!wp-config.php
+/wp-config-local.php
+/wp-config-staging.php
+/wp-config-sample.php
+
+# wp-content (covers backup/cache stuff)
+# -------------------------------------
+
+/wp-content/*
+/wp-content/uploads
+/wp-content/plugins
+
+# wp-content/themes
+# ----------------------------------
+
+!/wp-content/themes/
+/wp-content/themes/twenty*
+
+# theme compiled files
+# ----------------------------------
+
+*app.min.js
+*css.min.css
+*jquery.min.js
+
+# Cache
+# ----------------------------------
+
+cache
+/wp-content/object-cache.php # Redis cache
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+
+# Backups
+# ----------------------------------
+
+backups
+/wp-content/updraft
+
+# Vendor files
+# ----------------------------------
+
+/vendor
+
+# Log files
+# ----------------------------------
+
+*.log
+error_log
+access_log
+*.swp
+
+# CSS / SASS files
+# ----------------------------------
+
+.sass-cache
+*.sass.map
+*.scss.map
+*.css.map
+*.config
+prepros*
+
+# OSX and Windows anoying files
+# ----------------------------------
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+# Server Files
+# ----------------------------------
+/cgi-bin
+
+# PHP CodeSniffer
+# ----------------------------------
+/wp-content/themes/*/phpcs.xml.dist
+
+# Composer lock
+# ----------------------------------
+composer.lock
+
+# Npm Package lock
+# ----------------------------------
+package-lock.json

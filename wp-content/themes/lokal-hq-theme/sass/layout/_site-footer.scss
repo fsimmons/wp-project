@@ -1,0 +1,125 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-03 04:51:14
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-03 11:44:41
+ */
+// The very bottom of the site. Usually contains supporting
+// or secondary navigation, social media icons, contact details
+// and such.
+
+// Please note: These are mostly for demo purposes
+// so feel free to remove everything in this file
+// and start over.
+.site-footer {
+  clear: both;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow: hidden;
+  padding: 0;
+
+  text-align: center;
+
+  p,
+  span {
+    color: var(--color-white);
+  }
+
+  .wordpress-logo {
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+  }
+
+  svg {
+    margin-right: .5rem;
+    position: relative;
+  }
+
+  .powered-by-wordpress {
+    display: inline-block;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .github-link {
+    margin-left: .8rem;
+    margin-top: 4px;
+    overflow: hidden;
+    padding-bottom: 4px;
+    position: relative;
+  }
+
+  a {
+    color: var(--color-white);
+    transition: opacity $transition-duration;
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      opacity: .5;
+
+      &::after {
+        opacity: .2;
+      }
+    }
+  }
+
+  .theme-info {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: center;
+
+    i {
+      margin: 0 .5rem;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    .footer-socials {
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: $container-mobile) {
+      flex-direction: row;
+      .footer-socials {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-side {
+      &--left {
+        display: flex;
+        justify-content: flex-start;
+      }
+      &--right {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  .footer-socials a {
+    margin-right: 1rem;
+    @media (min-width: $container-mobile) {
+      margin-right: 0;
+      margin-left: 1rem;
+    }
+  }
+}

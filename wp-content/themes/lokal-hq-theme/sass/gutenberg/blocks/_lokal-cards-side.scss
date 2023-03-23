@@ -1,0 +1,56 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-03 05:04:15
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-13 18:33:49
+ */
+
+ // Custom Lokal Cards on the Side
+
+
+.block-side-cards {
+    h2 {
+        border-bottom: 2px solid var(--color-lime-green);
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+.side-card {
+    padding: 3rem;
+    border-radius: 10px;
+    background: var(--color-light-gray);
+    margin-bottom: 2rem;
+    h4 {
+        margin-bottom: 1.5rem;
+        font-size: var(--font-size-h3);
+        @media (min-width: $container-mobile) {
+            font-size: var(--font-size-h4);
+        }
+    }
+    p {
+        margin-top: 1.5rem;
+        color:var(--color-dark-gray);
+    }
+
+    @media (min-width: $container-mobile) {
+        padding: 5rem 7rem;
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: $container-mobile) {
+    
+    .small-column {
+        width: 43%;
+        padding-right: 5%;
+    }
+    
+    .large-column {
+        width: 57%;
+    }
+}
+
+
+
+

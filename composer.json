@@ -1,0 +1,82 @@
+{
+    "name": "gulo/wordpress-website",
+    "description": "Wordpress Website",
+    "repositories": {
+        "acf": {
+            "type": "package",
+            "package": {
+                "name": "acf/advanced-custom-fields-pro",
+                "type": "wordpress-plugin",
+                "version": "6.0.7",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k=b3JkZXJfaWQ9NzY3ODl8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTYtMDMtMDcgMjE6NDU6NTQ="
+                }
+            }
+        },
+        "gravityforms": {
+            "type": "package",
+            "package": {
+                "name": "gravityforms/gravityforms",
+                "type": "wordpress-plugin",
+                "version": "2.6.9",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://www.dropbox.com/s/fxh44ars6xn046l/gravityforms_2.6.9.zip?raw=1"
+                }
+            }
+        },
+        "wpackagist": {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        "my-yoast": {
+            "type": "composer",
+            "url": "https://my.yoast.com/packages/",
+            "only": ["yoast/wordpress-seo-premium"]
+        },
+        "objectcache.pro": {
+            "type": "composer",
+            "url": "https://objectcache.pro/repo/"
+        }
+    },
+    "require": {
+        "acf/advanced-custom-fields-pro": "^6.0"
+    },
+    "require-dev": {
+        "acf/advanced-custom-fields-pro": "^6.0",
+        "gravityforms/gravityforms": "^2.0",
+        "wpackagist-plugin/query-monitor": "^3.0",
+        "wpackagist-plugin/optinmonster": "^2.0",
+        "yoast/wordpress-seo-premium": "*"
+  
+    },
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    },
+    "extra": {
+        "installer-types": [
+            "wordpress-plugin",
+            "wordpress-dropin"
+        ],
+        "installer-paths": {
+            "./wp-content/plugins/{$name}": [
+                "type:wordpress-plugin",
+                "type:wordpress-dropin"
+            ],
+            "./private/scripts/quicksilver/{$name}/": [
+                "type:quicksilver-script"
+            ]
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

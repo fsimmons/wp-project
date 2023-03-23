@@ -1,0 +1,14 @@
+{
+    "name": "acf/carousel",
+    "title": "Carousel",
+    "description": "A custom carousel block.",
+    "category": "lokalwp",
+    "icon": "admin-comments",
+    "keywords": ["main-carousel"],
+    "post_types": ["post", "page"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "render.php"
+    },
+    "align": "full"
+}

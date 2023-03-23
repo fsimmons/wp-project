@@ -1,0 +1,14 @@
+{
+    "name": "acf/cards-side-splash",
+    "title": "Side Cards",
+    "description": "A custom side cards block.",
+    "category": "lokalwp",
+    "icon": "admin-comments",
+    "keywords": ["block-side-cards"],
+    "post_types": ["post", "page"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "render.php"
+    },
+    "align": "full"
+}

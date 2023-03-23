@@ -1,0 +1,14 @@
+{
+    "name": "acf/carousel-splash",
+    "title": "Carousel Splash",
+    "description": "A custom carousel block.",
+    "category": "lokalwp",
+    "icon": "admin-comments",
+    "keywords": ["block-carousel"],
+    "post_types": ["post", "page"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "render.php"
+    },
+    "align": "full"
+}

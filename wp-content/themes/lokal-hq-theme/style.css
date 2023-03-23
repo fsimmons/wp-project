@@ -1,0 +1,51 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-10 11:41:16
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-14 12:29:47
+ */
+
+/*!
+Theme Name: Lokal HQ Theme
+Theme URI: https://github.com/GuloSolutions/lokal-hq-com-theme
+Author: Lokal HQ
+Author URI: https://lokalhq.com/
+Description: 
+Version: 9.3.1
+
+------8<----------
+Please do this before your actual theme is ready to go live:
+
+1. Cut everything between "------8<----------" including the separator
+2. Theme Name should be already replaced, but double check it
+3. Edit Theme URI, Author, Author URI, Description
+4. Add Version as 1.0.0.
+
+This metadata and guide should not be visible in production.
+If you see this, contact the site admin.
+
+/*---------------------------------------------------------------
+>>> Air-light theme version information, only for AIR developers
+-----------------------------------------------------------------
+@version 2023-02-24
+@since 2016-01-28
+
+Tested up to: 6.1.1
+Requires PHP: 7.4
+License: MIT License
+License URI: LICENSE
+Text Domain: air-light
+Tags: one-column, accessibility-ready, translation-ready
+This theme is licensed under MIT.
+Use it to make something cool, have fun, and share what you've learned.
+Air-light is based on Underscores https://underscores.me/ C) 2016-2022 Digitoimisto Dude Oy
+_s is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+Last implemented _s commit: 7226368 (May 15, 2020)
+Last checked _s commit: e78a808 (May 16, 2020)
+@link https://github.com/Automattic/_s/commits/master
+------8<----------
+*/

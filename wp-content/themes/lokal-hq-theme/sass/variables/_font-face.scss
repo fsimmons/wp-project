@@ -1,0 +1,23 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-02 13:14:45
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-21 12:38:13
+ */
+// Self-hosted fonts
+// Remember to add these also to gutenberg/variables/_font-family.scss
+// with correct paths
+
+// Variable fonts
+@include variablefont('Inter', '../../fonts/inter-variablefont', 1 999);
+
+// Regular fonts
+@include font('Inter', '../../fonts/inter-400', 400);
+@include font('Inter', '../../fonts/inter-400-italic', 400, italic);
+@include font('Inter', '../../fonts/inter-500', 500);
+@include font('Inter', '../../fonts/inter-600', 600);
+@include font('Inter', '../../fonts/inter-700', 700);
+
+@include font('AeonikBold', '../../fonts/Aeonik-Pro-Bold', 800);
+@include font('AeonikMedium', '../../fonts/Aeonik-Pro-Medium', 600);
+@include font('AeonikRegular', '../../fonts/Aeonik-Pro-Regular', 600);

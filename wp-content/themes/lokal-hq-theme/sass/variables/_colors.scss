@@ -1,0 +1,51 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-02 13:14:45
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-22 10:41:09
+ */
+// CSS variables
+// Define names:
+// For AAA: https://www.color-blindness.com/color-name-hue/
+// For AA: https://chir.ag/projects/name-that-color/
+// ------------------------------------------------------
+
+
+
+:root {
+  // Brand color pool
+  --color-black: #000;
+  --color-black-rock: #2b303c;
+  --color-blue-chalk: #ece6f2;
+  --color-east-bay: #545773;
+  --color-pattens-blue: #eaf1f8;
+  --color-science-blue: #0049d1;
+  --color-scorpion: #5f5f5f;
+  --color-valhalla: #000;
+  --color-white: #fff;
+
+  --color-lime-green: #00E35D;
+  --color-dark-gray: #434343;
+  --color-gray: #C4C4C4;
+  --color-light-gray: #EEEEEE;
+
+
+
+  // Main element colors
+  --color-heading: var(--color-main);
+  --color-main: var(--color-valhalla);
+  --color-paragraph: var(--color-east-bay);
+
+  // Modern link
+  --color-link-text: var(--color-science-blue);
+  --color-link-text-hover: var(--color-black);
+
+  // Element states
+  --color-error: #cc2e2e;
+  --color-success: #21aa14;
+}
+
+
+
+
+

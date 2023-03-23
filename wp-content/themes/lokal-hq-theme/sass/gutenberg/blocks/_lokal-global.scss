@@ -1,0 +1,204 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-03 05:04:15
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-22 12:59:43
+ */
+// Custom Blocks Generic Styles - all specific styles needs to be compiled separately in the future
+
+//Generic
+
+.alignfull {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media (min-width: $container-mobile) {
+      padding-left: calc((100vw - 1220px)/2) !important;
+      padding-right: calc((100vw - 1220px)/2) !important;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+} 
+
+// Added Colors
+
+.has-inline-color.has-lime-green-color {
+    color: var(--color-lime-green);
+}
+
+.has-background.has-lime-green-background-color  {
+    background-color: var(--color-lime-green);
+}
+
+.has-background.has-white-to-grey-gradient-background {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 50%);
+}
+
+//Button Custom Styles
+.button .nav-link[target="_blank"] span {
+    color: var(--color-black) ;
+    font-family: var(--font-paragraph) ;
+    font-size: var(--font-size-18);
+    &::after {
+        display: flex;
+        width: 1.5rem;
+        margin-left: 1rem;
+        margin-bottom: -2px;
+        content: url('../../svg/external-link-black.svg');
+    }
+}
+
+.wp-element-button[target="_blank"] {
+    display: flex;
+    &::after {
+        display: flex;
+        margin-top: 1px;
+        margin-left: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        content: url('../../svg/external-link-black.svg');
+    }
+    &:hover {
+        &::after {
+            content: url('../../svg/external-link-white.svg');
+        }
+    }
+}
+
+
+.button[target="_blank"] {
+    display: inline-flex;
+    align-items: center;
+    &::after {
+        display: flex;
+        margin-left: 1rem;
+        margin-bottom: -2px;
+        content: url('../../svg/external-link-black.svg');
+    }
+    &:hover {
+        &::after {
+            content: url('../../svg/external-link-white.svg');
+        }
+    }
+}
+
+// Additional Classes for the Editor
+
+.flex-box {
+    @media (min-width: $container-mobile) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.hero-heading {
+    font-size: 38px;
+    @media (min-width: $container-mobile) {
+        font-size: 64px;
+    }
+}
+
+.radius-wrapper {
+    padding: 3rem 3rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: 2px 0px 41px 9px rgba(150,150,150,0.3);
+    @media (min-width: $container-mobile) {
+        padding: 6rem 8rem;
+        margin-right: 5rem;
+        margin-top: 0;
+    }
+}
+
+.border-bottom {
+    border-bottom: 2px solid var(--color-light-gray);
+    @media (min-width: $container-mobile) {
+        padding-bottom: 5rem;
+    }
+}
+
+
+.has-subtitle-image {
+    display: flex;
+    height: 4rem;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-size: 16px !important;
+    letter-spacing: 3px;
+    &::before {
+        content: url(../../svg/green-rays.svg);
+        margin-top: -8rem;
+        margin-left: -6rem;
+        margin-right: -11.5rem;
+        transform: scale(80%);
+        @media (max-width: $container-mobile) {
+            margin-top: -6rem;
+            transform: scale(50%);
+        }
+    }
+}
+
+.has-circle,
+.has-lime-green-color s {
+    text-decoration: none;
+    background: url(../../svg/text-circle.svg) no-repeat center center;
+    background-size: 100% auto;
+    text-decoration: none;
+    padding: 1rem;
+
+    @media (max-width: $container-mobile) {
+        margin-bottom: .2rem;
+        margin-left: -10px;
+        display: inline-flex;
+    }
+}
+
+.single-testimonials {
+    h4 {
+        @media (min-width: $container-mobile) {
+            width: 70%;
+        }
+       
+        margin: auto;
+        font-family: var(--font-aeonik-medium);
+        font-size: 40px;
+    }
+}
+
+.wp-block-media-text {
+    .wp-block-media-text__content  {
+        padding: 0;
+        padding-left: 15%;
+        padding-right: 8%;
+        @media (max-width: $container-mobile) {
+            padding: 8% 0;
+        }
+    }
+
+    &.has-media-on-the-right {
+        .wp-block-media-text__content  {
+            padding-right: 5%;
+            padding-left: 0;
+            @media (max-width: $container-mobile) {
+                padding: 8% 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $container-mobile) {  
+    
+    h1, h2, h3, h4, h5, p {
+        br {
+            display: none;
+        }
+    }
+
+}

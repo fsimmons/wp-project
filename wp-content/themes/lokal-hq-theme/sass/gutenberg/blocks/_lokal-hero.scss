@@ -1,0 +1,36 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-03 05:04:15
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-13 18:33:08
+ */
+// Custom Lokal Hero
+
+.hero-content {
+    padding-top: 10rem;
+
+    @media (max-width: $container-mobile) {
+        h1 {
+            margin-bottom: 1.2rem;
+        }
+        h6 {
+            margin-top: 1.2rem;
+            font-size: var(--font-size-20);
+            font-family: var(--font-bold-text);
+        }
+    }
+}
+
+h1.heading-hero {
+    line-height: 1.1;
+}
+
+
+@media (min-width: $container-mobile) {
+    .hero-content {
+        width: 50%;
+    }
+}
+
+
+

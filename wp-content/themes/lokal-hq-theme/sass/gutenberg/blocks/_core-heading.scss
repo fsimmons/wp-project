@@ -1,0 +1,30 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-14 12:30:24
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-21 09:28:50
+ */
+// Core/heading block
+
+// Title line-heights
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: var(--line-height-core-heading);
+}
+
+// Don't add extra margin on top of first title
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+

@@ -1,0 +1,48 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-03-02 19:15:28
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-03-20 22:17:03
+ */
+// List of all blocks: https://wordpress.org/support/article/blocks/
+// Core blocks only meant for article content
+.editor-styles-wrapper,
+.article-content {
+  @import 'gutenberg/blocks/core-blockquote';
+  @import 'gutenberg/blocks/core-buttons';
+  @import 'gutenberg/blocks/core-columns';
+  @import 'gutenberg/blocks/core-separator';
+  @import 'gutenberg/blocks/core-heading';
+  @import 'gutenberg/blocks/core-image';
+  @import 'gutenberg/blocks/core-list';
+  @import 'gutenberg/blocks/core-paragraph';
+  @import 'gutenberg/blocks/core-pullquote';
+  @import 'gutenberg/blocks/core-table';
+  @import 'gutenberg/blocks/core-video';
+
+
+  // Custom Gutenberg block styles
+  @import 'gutenberg/blocks/boxed';
+  @import 'gutenberg/blocks/button-file';
+
+
+  // Add here those ACF Gutenberg blocks you want to use inside article-content
+
+}
+
+// Blocks only meant for outside article-content
+.editor-styles-wrapper,
+.site-main {
+  // Error block styles
+  @import 'gutenberg/blocks/error';
+
+  // ACF blocks
+  @import 'gutenberg/blocks/carousel';
+  @import 'gutenberg/blocks/lokal-global';
+  @import 'gutenberg/blocks/lokal-hero';
+  @import 'gutenberg/blocks/lokal-cta-newsletter';
+  @import 'gutenberg/blocks/lokal-cards';
+  @import 'gutenberg/blocks/lokal-cards-side';
+  @import 'gutenberg/blocks/lokal-tabs';
+  @import 'gutenberg/blocks/lokal-list';
+}

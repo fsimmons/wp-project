@@ -1,0 +1,14 @@
+{
+    "name": "acf/hero-splash",
+    "title": "Hero Splash",
+    "description": "A custom hero block.",
+    "category": "lokalwp",
+    "icon": "admin-comments",
+    "keywords": ["block-hero"],
+    "post_types": ["post", "page"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "render.php"
+    },
+    "align": "full"
+}

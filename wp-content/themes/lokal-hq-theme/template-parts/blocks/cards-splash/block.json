@@ -1,0 +1,14 @@
+{
+    "name": "acf/cards-splash",
+    "title": "Simple Cards",
+    "description": "A custom cards block.",
+    "category": "lokalwp",
+    "icon": "admin-comments",
+    "keywords": ["block-cards"],
+    "post_types": ["post", "page"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "render.php"
+    },
+    "align": "full"
+}
